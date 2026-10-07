@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Glimmerglass — Transparent animation, ready for the web</title>
+  <meta name="description" content="Turn your transparent artwork into a ready-to-place animation component. Glimmerglass for iPhone, iPad, Mac and Framer.">
+  <link rel="icon" href="assets/icon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="hero.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <a href="index.html" aria-label="Glimmerglass home"><img src="assets/logo.svg" alt="Glimmerglass" width="184"></a>
+    <nav aria-label="Main"><a href="apple.html">Apple app</a><a href="framer.html">Framer plugin</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+  <main id="main">
+    <div class="hero-intro">
+      <div>
+        <p class="eyebrow">From your artwork to the web</p>
+        <h1>Let your animation<br>out of the frame.</h1>
+      </div>
+      <div>
+        <p class="lead">Start with your artwork. Glimmerglass turns transparent animations into a component with the player and video files already connected.</p>
+        <div class="actions"><a class="button" href="apple.html">iPhone, iPad &amp; Mac</a><a class="button secondary" href="framer.html">Inside Framer</a></div>
+      </div>
+    </div>
+    <figure class="hero-film" aria-labelledby="film-caption">
+      <div class="film-frame">
+        <video id="hero-video" muted loop playsinline controls preload="metadata" poster="assets/glimmerglass-workflow-poster.jpg" aria-label="A 44-second silent film: exported transparent animations go through Glimmerglass and Framer into a finished knight parade." aria-describedby="film-caption">
+          <source src="assets/glimmerglass-workflow.mp4" type="video/mp4">
+          <source src="assets/glimmerglass-workflow.webm" type="video/webm">
+          <p>Your browser cannot play this video. <a href="assets/glimmerglass-workflow.mp4">Download the film</a>.</p>
+        </video>
+        <button class="film-toggle" type="button" aria-controls="hero-video" hidden>Play video</button>
+      </div>
+      <figcaption id="film-caption"><span>From your files to a finished scene.</span> Open your exported animation in Glimmerglass, create its component, then place it in Framer.</figcaption>
+    </figure>
+    <ol class="workflow" aria-label="How Glimmerglass works">
+      <li><span class="step-number" aria-hidden="true">01</span><h2>Add your artwork</h2><p>Drop in an animation or a folder of PNG frames, with its transparency intact.</p></li>
+      <li><span class="step-number" aria-hidden="true">02</span><h2>Find the right fit</h2><p>Preview different sizes and backgrounds. Adjust quality and compare the estimated file size.</p></li>
+      <li><span class="step-number" aria-hidden="true">03</span><h2>Create and place</h2><p>Make your component, then bring it into your scene. The player and transparent videos come together.</p></li>
+    </ol>
+    <p class="status">Glimmerglass is in preparation for release. App Store and Framer Marketplace downloads are not yet available.</p>
+    <div class="intro product-preview">
+      <div><h2>A little adjustment.<br>A lighter animation.</h2><p>Keep your source artwork, choose the sizes you need and create when you’re ready. Use the guide for the app or plugin to make your first component.</p><a href="apple.html">Explore the Apple app</a></div>
+      <figure><img src="assets/settings.png" alt="Glimmerglass on iPad, showing the animation preview beside component settings" width="360" height="480" loading="lazy"><figcaption>The native iPad experience.</figcaption></figure>
+    </div>
+    <div class="split">
+      <section class="glass"><h2>Start with transparency</h2><p>Use transparent MOV, WebM, APNG or GIF files, or a sequence of PNG frames. Glimmerglass preserves the transparency in your artwork; it doesn’t remove an existing background.</p><a href="apple.html#formats">File formats and limits</a></section>
+      <section class="glass"><h2>Keep what you create</h2><p>Every completed export includes transparent videos, posters and a player. A created component keeps working independently of the conversion tool.</p><a href="apple.html#download">Using your download</a></section>
+    </div>
+    <section class="glass"><h2>Need a hand?</h2><p>Tell us your device, input format and the error you see. Keep license keys and private artwork out of your first message.</p><a class="contact" href="mailto:mike@houseofkoco.com?subject=Glimmerglass%20support">mike@houseofkoco.com</a></section>
+  </main>
+  <footer><span>Glimmerglass</span><a href="privacy.html">Privacy</a><a href="framer.html#license">License help</a></footer>
+</body>
+</html>
